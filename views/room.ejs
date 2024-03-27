@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #videos{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            border-radius: 22px;
+        }
+        video {
+    width: 400px; 
+    height: 200px; 
+    margin: 30px; 
+    border-radius: 22px;
+    border: 4px solid #ccc; 
+    border-radius: 5px; 
+}
+    </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js" defer></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js" defer></script>
+
+    <script>
+    </script>
+</head>
+<body>
+    <div id="roomId" style="display: none;"><%= roomId %></div>
+        <div id="videos"></div>
+
+  
+</body>
+</html>
